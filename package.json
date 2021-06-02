@@ -2,6 +2,7 @@
   "name": "pri-lab",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://alexandr-gord.github.io/RPI3/",
   "dependencies": {
     "3d-react-carousal": "^3.1.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
@@ -28,7 +29,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -49,6 +52,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^3.2.0",
     "react-player": "^2.9.0"
   }
 }
