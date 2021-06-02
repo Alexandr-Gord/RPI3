@@ -30,8 +30,9 @@ function PhotographersPage() {
         next:
             for (const director of DIRECTORS) {
                 const name = director.name.toLowerCase();
+                const lifetime = director.lifetime.substring(0, 4);
                 for (const word of words) {
-                    if (name.indexOf(word) !== -1) {
+                    if ((name.indexOf(word) !== -1) || (lifetime.indexOf(word) !== -1)){
                         directors.push(director);
                         continue next;
                     }
